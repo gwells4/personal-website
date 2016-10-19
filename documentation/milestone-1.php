@@ -17,7 +17,7 @@
 
 		<!-- This is the header -->
 		<header>
-			<h1>About Me - PWP Milestones</h1>
+			<h1>PWP Milestone 1</h1>
 		</header>
 
 		<!-- This is the main page content. -->
