@@ -9,7 +9,7 @@
 		<!-- Add CSS file -->
 		<link href="../css/stylesheet.css" rel="stylesheet" type="text/css" />
 
-		<title>Repository 3: About Me - PWP Milestones</title>
+		<title>PWP Milestone 1</title>
 
 	</head>
 
@@ -106,8 +106,8 @@
 
 				<p>The hipster will interact with the site based on the scenarios above. The flowchart below visually depicts the steps they will take while using the site.</p>
 
-				<img  id="diagram-use-case" src="img/about-me-use-case.svg" alt="Flow chart for use case" >
-
+				<!--<img  id="diagram-use-case" src="../img/about-me-use-case.svg" alt="Flow chart for use case" >
+				-->
 			</section>
 
 			<!-- Section 6: User Interaction Flow -->
@@ -170,8 +170,8 @@
 
 				<h3>Entity Relationship Diagram</h3>
 
-				<img  id="diagram-entity-relationship" src="img/about-me-erd.svg" alt="Entity Relationship Diagram" >
-
+				<!-- <img  id="diagram-entity-relationship" src="../img/about-me-erd.svg" alt="Entity Relationship Diagram" >
+				-->
 			</section>
 
 		</main>
