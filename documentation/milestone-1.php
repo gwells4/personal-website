@@ -104,12 +104,13 @@
 
 				<h2>Use Case</h2>
 
-				<p>A use case should be based on your persona’s motivations and goals. Your use case should detail the time, location, technology used, and the purpose or goal of your Persona's use of your site.<br>
-				Time: When they need to update their web presence.<br>
-				Location: Most likely from the workplace that needs to update its web presence. Personal and small business owners might access it from home.<br>
-				Technology: Desktop, laptop, or mobile devices.<br>
-				Purpose: They are looking for either a full-time employee or freelancer to update their web presence, and they are trying to make a quick judgement on my skill level, and then (if interested), they will expect to be able to contact me through a contact form.
-				</p>
+				<p>Here is the use case based on the Professional's expected motivations for going to my website.<p>
+				<ul>
+					<li>Time: When they need to update their web presence.</li>
+					<li>Location: Most likely from the workplace that needs to update its web presence. Personal and small business owners might access it from home.</li>
+					<li>Technology: Desktop, laptop, or mobile devices.</li>
+					<li>Purpose: They are looking for either a full-time employee or freelancer to update their web presence, and they are trying to make a quick judgement on my skill level, and then (if interested), they will expect to be able to contact me through a contact form.</li>
+				</ul>
 			</section>
 
 		</main>
