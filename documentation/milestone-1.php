@@ -65,7 +65,7 @@
 					<li>
 						<b>Description</b><br>
 						<u>Professional:</u> A person in a workplace that needs help with a website.<br>
-						Names: Ben Hadden, Jacqueline Camber, Alferd Zanna, Lyn Peverell, & Josie Smith  <!-- Names courtesy of nameberry.com -->
+						Names: Ben Hadden, Jacqueline Camber, Alferd Zanna, Lyn Peverell, & Josie Smith<br>  <!-- Names courtesy of nameberry.com -->
 						Age: 20 - 30.<br>
 						Role: Marketing, Sales, or Public Relations.<br>
 						They may be looking for either a full-time employee or freelancer.
@@ -105,7 +105,7 @@
 				<h2>Use Case</h2>
 
 				<p>A use case should be based on your persona’s motivations and goals. Your use case should detail the time, location, technology used, and the purpose or goal of your Persona's use of your site.<br>
-				Names: Ben Hadden, Jacqueline Camber, Alferd Zanna, Lyn Peverell, & Josie Smith  <!-- Names courtesy of nameberry.com -->
+				Time: <br>
 				Age: 20 - 30.<br>
 				Role: Marketing, Sales, or Public Relations.<br>
 				They may be looking for either a full-time employee or freelancer.
