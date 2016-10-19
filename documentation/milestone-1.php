@@ -104,8 +104,12 @@
 
 				<h2>Use Case</h2>
 
-				<p>The hipster will interact with the site based on the scenarios above. The flowchart below visually depicts the steps they will take while using the site.</p>
-
+				<p>A use case should be based on your persona’s motivations and goals. Your use case should detail the time, location, technology used, and the purpose or goal of your Persona's use of your site.<br>
+				Names: Ben Hadden, Jacqueline Camber, Alferd Zanna, Lyn Peverell, & Josie Smith  <!-- Names courtesy of nameberry.com -->
+				Age: 20 - 30.<br>
+				Role: Marketing, Sales, or Public Relations.<br>
+				They may be looking for either a full-time employee or freelancer.
+				</p>
 			</section>
 
 		</main>
