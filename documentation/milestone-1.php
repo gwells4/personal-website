@@ -4,10 +4,10 @@
 	<head>
 
 		<meta charset="utf-8" />
-		<link rel="Browser-Tab Icon" href="img/icon-list.svg" type="image/svg">
+		<link rel="Browser-Tab Icon" href="../img/icon-list.svg" type="image/svg">
 
 		<!-- Add CSS file -->
-		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+		<link href="../css/stylesheet.css" rel="stylesheet" type="text/css" />
 
 		<title>Repository 3: About Me - PWP Milestones</title>
 
@@ -55,7 +55,7 @@
 
 				<h2>Persona</h2>
 
-				<img id="picture-workplace-group" src="img/workplace-group.jpg" alt="Picture of a Group of People in the Workplace">  <!-- Names courtesy of pixabay.com -->
+				<img id="picture-workplace-group" src="../img/workplace-group.jpg" alt="Picture of a Group of People in the Workplace">  <!-- Names courtesy of pixabay.com -->
 
 				<ol>
 					<li>
