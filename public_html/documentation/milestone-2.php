@@ -46,8 +46,8 @@
 
 				<h3>Desktop Wireframes</h3>
 
-				<img src="../img/personal-website-desktop-wireframe-1.jpg" alt="Desktop Wireframe 1">
-				<img src="../img/personal-website-desktop-wireframe-2.jpg" alt="Desktop Wireframe 2">
+				<img id="desktop-wireframe-1" src="../img/personal-website-desktop-wireframe-1.jpg" alt="Desktop Wireframe 1">
+				<img id="desktop-wireframe-2" src="../img/personal-website-desktop-wireframe-2.jpg" alt="Desktop Wireframe 2">
 
 			</section>
 
@@ -56,8 +56,8 @@
 
 				<h3>Mobile Wireframes</h3>
 
-				<img src="../img/personal-website-mobile-wireframe-1.jpg" alt="Mobile Wireframe 1">
-				<img src="../img/personal-website-mobile-wireframe-2.jpg" alt="Mobile Wireframe 2">
+				<img id="mobile-wireframe-1" src="../img/personal-website-mobile-wireframe-1.jpg" alt="Mobile Wireframe 1">
+				<img id="mobile-wireframe-2" src="../img/personal-website-mobile-wireframe-2.jpg" alt="Mobile Wireframe 2">
 
 			</section>
 
