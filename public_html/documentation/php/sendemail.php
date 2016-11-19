@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * require all composer dependencies; requiring the autoload file loads all composer packages at once
  * while this is convenient, this may load too much if your composer configuration grows to many classes
@@ -6,9 +7,17 @@
  **/
 require_once(dirname(dirname(dirname(dirname(__DIR__)))) . "/personal-website/vendor/autoload.php");
 
+require_once(dirname(dirname(dirname(dirname(__DIR__)))) . "/personal-website/public_html/documentation/securimage/securimage.php");
+$securimage = new Securimage();
+
 
 
 try {
+
+	if ($securimage->check($_POST['captcha_code']) == false) {
+		// the code was incorrect
+		throw(new RuntimeException("Your captcha response was incorrect."));
+	}
 
 	// sanitize the inputs from the form: name, email, subject, and message
 	// this assumes jQuery (not Angular will be submitting the form, so we're using the $_POST superglobal
@@ -35,9 +44,6 @@ try {
 	// attach the subject line to the message
 	$swiftMessage->setSubject($subject);
 
-	echo "<div>subject = " . $subject . "</div>";
-	echo "<p>recipients = " . $recipients . "</p>";
-
 	/**
 	 * attach the actual message to the message
 	 * here, we set two versions of the message: the HTML formatted message and a special filter_var()ed
@@ -63,11 +69,9 @@ try {
 	 * so, if the number attempted is not the number accepted, this is an Exception
 	 **/
 
-	echo "<p>num sent = " . $numSent . "  |  num recipients = " . count($recipients) . "</p>";
-
 	if($numSent !== count($recipients)) {
 		// the $failedRecipients parameter passed in the send() method now contains contains an array of the Emails that failed
-		throw(new RuntimeException("unable to send email"));
+		throw(new RuntimeException("Unable to send email"));
 	}
 
 	// report a successful send

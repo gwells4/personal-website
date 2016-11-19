@@ -1,35 +1,25 @@
 
 /*
-* Temporary outlines of columns
-*/
-
-div[class^="col-"] {
-	border-style: dotted;
-	border-width: 1px;
-	border-color: lightslategray;
-}
-
-/*
 * Nav Bar
 */
 
 body {
-	padding-bottom: 20vh; /* Padding so content is not hidden behind navbar */
-	background-color: lightgreen; */
+	padding-bottom: 10vh; /* Padding so content is not hidden behind navbar */
+	background-color: #f9e3a9;
 }
 
 .navbar-default {
-	border-color: none; /* Border color for the entire navbar */
+	border-color: #082877; /* Border color for the entire navbar */
 	border-width: none; /* Border width for the entire navbar */
 	border-radius: 0; /* Border radii for the entire navbar */
-	background-color: silver; /* Background color for the entire navbar (empty areas mostly, as the navbar's menu items can have their color set independently) */
+	background-color: #a9c0f9; /* Background color for the entire navbar (empty areas mostly, as the navbar's menu items can have their color set independently) */
 	background-image: none; /* Background image for the entire navbar */
 }
 
 .navbar-default .navbar-brand {
 	float: left;
 	font-weight: bold;
-	color: maroon; /* Default text color for navbar's brand  */
+	color: #082877; /* Default text color for navbar's brand  */
 	background-color: none; /* Default color for navbar's brand */
 	/*background-image: url("../img/brand-logo.png"); !* Default background image for navbar's brand  *!*/
 }
@@ -37,40 +27,40 @@ body {
 .navbar-default .navbar-brand:hover {
 	float: left;
 	font-weight: bold;
-	color: white; /* Text color for navbar's brand when it's hovered over */
-	background-color: maroon; /* Background color for navbar's brand when it's hovered over */
+	color: #a9c0f9; /* Text color for navbar's brand when it's hovered over */
+	background-color: #082877; /* Background color for navbar's brand when it's hovered over */
 	background-image: none; /* Background image for navbar's brand when it's hovered over */
 }
 
 .navbar-default .navbar-brand:focus {
 	float: left;
 	font-weight: bold;
-	color: white; /* Text color for the navbar's brand when it has the focus */
-	background-color: maroon; /* Background color for navbar's brand when it has the focus */
+	color: #a9c0f9; /* Text color for the navbar's brand when it has the focus */
+	background-color: #082877; /* Background color for navbar's brand when it has the focus */
 	background-image: none; /* Background image for the navbar's brand when it has the focus */
 }
 
 
 .navbar-default .navbar-nav > li > a {
 	text-shadow: none;
-	color: black; /* Text color for the items in the navbar's menu */
-	background-color: silver; /* Background color for the items in the navbar's menu */
+	color: #082877; /* Text color for the items in the navbar's menu */
+	background-color: #a9c0f9; /* Background color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar's menu */
 }
 
 .navbar-default .navbar-nav > li > a:hover {
 	text-shadow: none;
 	font-weight: bold;
-	color: white;
-	background-color: maroon; /* Hover color for the items in the navbar's menu */
+	color: #a9c0f9;
+	background-color: #082877; /* Hover color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar */
 }
 
 .navbar-default .navbar-nav > li > a:focus {
 	text-shadow: none;
 	font-weight: bold;
-	color: white; /* Text color for navbar's brand when it's hovered over */
-	background-color: maroon; /* Hover color for the items in the navbar's menu */
+	color: #a9c0f9; /* Text color for navbar's brand when it's hovered over */
+	background-color: #082877; /* Hover color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar */
 }
 
@@ -78,43 +68,50 @@ body {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	text-shadow: none;
-	color: white; /* Text color for toggle button text */
-	background-color: maroon; /* Background color for toggle buttons */
+	color: #a9c0f9; /* Text color for toggle button text */
+	background-color: #082877; /* Background color for toggle buttons */
 	background-image: none;
 }
 
 .navbar-default .navbar-text {
 	text-shadow: none;
-	/*color: white; !*  *!*/
 }
 
-.navbar-default .navbar-header .navbar-toggle {
-	border-color: maroon; /*  */
+.navbar-default .navbar-heading button.navbar-toggle {
+	border-color: #082877; /*  */
 	border-width: medium;
 	text-shadow: none;
-	color: white;
+	color: #a9c0f9;
 	background-image: none;
 }
 
-.navbar-default .navbar-header .navbar-toggle:hover,
-.navbar-default .navbar-header .navbar-toggle:focus {
+.navbar-default .navbar-heading button.navbar-toggle:hover,
+.navbar-default .navbar-heading button.navbar-toggle:focus {
 	text-shadow: none;
-	color: white;
-	background-color: maroon; /*  */
+	color: #a9c0f9;
+	background-color: #082877; /*  */
 	background-image: none;
 }
 
-.navbar-default .navbar-header .navbar-toggle .icon-bar {
+.navbar-default .navbar-heading button.navbar-toggle .glyphicon {
 	text-shadow: none;
-	color: white;
-	background-color: maroon; /*  */
+	color: #082877;
+	background-color: #a9c0f9; /*  */
+	background-image: none;
+}
+
+.navbar-default .navbar-heading button.navbar-toggle:hover .glyphicon,
+.navbar-default .navbar-heading button.navbar-toggle:focus .glyphicon {
+	text-shadow: none;
+	color: #a9c0f9;
+	background-color: #082877; /*  */
 	background-image: none;
 }
 
 .navbar-default .dropdown {
 	text-shadow: none;
-	color: black; /* Text color for the items in the navbar's menu */
-	background-color: silver; /* Background color for the items in the navbar's menu */
+	color: #082877; /* Text color for the items in the navbar's menu */
+	background-color: #a9c0f9; /* Background color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar's menu */
 }
 
@@ -122,15 +119,15 @@ body {
 .navbar-default .dropdown:focus,
 .navbar-default .dropdown:enabled {
 	text-shadow: none;
-	color: white; /* Text color for the items in the navbar's menu */
-	background-color: maroon; /* Background color for the items in the navbar's menu */
+	color: #a9c0f9; /* Text color for the items in the navbar's menu */
+	background-color: #082877; /* Background color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar's menu */
 }
 
 .navbar-default .navbar-nav .dropdown .dropdown-toggle {
 	text-shadow: none;
-	color: black; /* Text color for the items in the navbar's menu */
-	background-color: silver; /* Background color for the items in the navbar's menu */
+	color: #082877; /* Text color for the items in the navbar's menu */
+	background-color: #a9c0f9; /* Background color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar's menu */
 }
 
@@ -138,15 +135,15 @@ body {
 .navbar-default .navbar-nav .dropdown .dropdown-toggle:focus,
 .navbar-default .navbar-nav .dropdown .dropdown-toggle:enabled {
 	text-shadow: none;
-	color: white; /* Text color for the items in the navbar's menu */
-	background-color: maroon; /* Background color for the items in the navbar's menu */
+	color: #082877; /* Text color for the items in the navbar's menu */
+	background-color: #082877; /* Background color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar's menu */
 }
 
 .navbar-default .navbar-nav .dropdown .dropdown-menu {
 	text-shadow: none;
-	color: black; /* Text color for the items in the navbar's menu */
-	background-color: silver; /* Background color for the items in the navbar's menu */
+	color: #082877; /* Text color for the items in the navbar's menu */
+	background-color: #a9c0f9; /* Background color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar's menu */
 }
 
@@ -154,15 +151,15 @@ body {
 .navbar-default .navbar-nav .dropdown .dropdown-menu:focus,
 .navbar-default .navbar-nav .dropdown .dropdown-menu:enabled {
 	text-shadow: none;
-	color: white; /* Text color for the items in the navbar's menu */
-	background-color: maroon; /* Background color for the items in the navbar's menu */
+	color: #a9c0f9; /* Text color for the items in the navbar's menu */
+	background-color: #082877; /* Background color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar's menu */
 }
 
 .navbar-default .navbar-nav .dropdown .dropdown-menu li a {
 	text-shadow: none;
-	color: black; /* Text color for the items in the navbar's menu */
-	background-color: silver; /* Background color for the items in the navbar's menu */
+	color: #082877; /* Text color for the items in the navbar's menu */
+	background-color: #a9c0f9; /* Background color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar's menu */
 }
 
@@ -170,8 +167,8 @@ body {
 .navbar-default .navbar-nav .dropdown .dropdown-menu li a:focus {
 	text-shadow: none;
 	font-weight: bold;
-	color: white; /* Text color for navbar's brand when it's hovered over */
-	background-color: maroon; /* Hover color for the items in the navbar's menu */
+	color: #a9c0f9; /* Text color for navbar's brand when it's hovered over */
+	background-color: #082877; /* Hover color for the items in the navbar's menu */
 	background-image: none; /* Background image for the items in the navbar */
 }
 
@@ -180,16 +177,78 @@ body {
 */
 
 section {
-	background-color: lightgreen;
+	background-color: #f9e3a9;
 }
 
 #top-of-page {
-	background-image: url("");
+	margin-bottom: 2vh;
 }
 
+.carousel-caption {
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+}
 
+.section-heading {
+	margin: 2vh;
+	border-radius: 10px;
+	background-color: #a9c0f9;
+	height: 5em;
+	line-height: 5em;
+	text-align: center;
+}
 
+.section-heading-text {
+	margin: 2vh;
+	color: #082877;
+	font-size: 2em;
+	font-weight: bold;
+}
 
+.subsection-heading {
+	margin: 2vh;
+	border-radius: 10px;
+	background-color: #a9c0f9;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+.subsection-heading-text {
+	margin: 2vh;
+	color: #082877;
+	font-weight: bold;
+}
+
+.contact-form {
+	margin: 2vh;
+	border-radius: 10px;
+	background-color: #a9c0f9
+}
+
+form#contact-form.form-horizontal.well {
+	margin: 2vh;
+	background-color: #a9c0f9;
+	background-image: none;
+	border: none;
+}
+
+.input-group-addon {
+	background-color: #a9c0f9;
+	border-color: #082877;
+	color: #082877;
+}
+
+.form-control {
+	border-color: #082877;
+}
+
+#captcha-reload-button {
+	border-radius: 25px;
+}
 
 
 

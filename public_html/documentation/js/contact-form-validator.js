@@ -63,3 +63,7 @@ $(document).ready(function(){
 	});/* end validate function */
 
 });/*end document.ready()*/
+
+function showCaptcha() {
+	document.getElementById("captcha").src = "securimage/securimage_show.php?" + Math.random();
+}

@@ -96,19 +96,24 @@
 
 <!--Top Background Image-->
 			<section id="top-of-page">
-				<div class="container-fluid">
+<!--				<div class="container-fluid">-->
+<!--					<div class="row">-->
+<!--						<div id="top-image" class="col-xs-12 top-image">-->
 
-					<div class="row">
+							<div class="carousel-slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="img/sunset-railing-people.jpg" alt="" class="img-responsive">
+										<div class="carousel-caption">
+											Caption
+										</div>
+									</div>
+								</div>
+							</div>
 
-						<div class="col-xs-12">
-
-
-
-						</div>
-
-					</div>
-
-				</div>
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
 			</section>
 
 
@@ -121,15 +126,14 @@
 					<div class="row">
 	<!--About Me Label-->
 						<div class="col-sm-4">
-							<div class="section-header">
-About Me
-
+							<div class="section-heading">
+								<p class="section-heading-text">Info</p>
 							</div>
 						</div>
 	<!--Professional Summary-->
 						<div class="col-sm-4">
-							<div class="subsection-header">
-Professional Summary
+							<div class="subsection-heading">
+								<p class="subsection-heading-text">Professional Summary</p>
 
 							</div>
 							<div class="subsection-content">
@@ -140,8 +144,8 @@ Professional Summary
 						</div>
 	<!--Abilities-->
 						<div class="col-sm-4">
-							<div class="subsection-header">
-Abilities
+							<div class="subsection-heading">
+								<p class="subsection-heading-text">Abilities</p>
 
 							</div>
 							<div class="subsection-content">
@@ -164,16 +168,15 @@ Abilities
 
 					<div class="row">
 	<!--Sample Work Label-->
-						<div class="col-sm-3">
-							<div class="section-header">
-Sample Work
-
+						<div class="col-sm-4">
+							<div class="section-heading">
+								<p class="section-heading-text">Projects</p>
 							</div>
 						</div>
 	<!--Project 1-->
-						<div class="col-sm-3">
-							<div class="subsection-header">
-Project 1
+						<div class="col-sm-4">
+							<div class="subsection-heading">
+								<p class="subsection-heading-text">Project 1</p>
 
 							</div>
 							<div class="subsection-content">
@@ -183,9 +186,9 @@ Project 1
 							</div>
 						</div>
 	<!--Project 2-->
-						<div class="col-sm-3">
-							<div class="subsection-header">
-								Project 2
+						<div class="col-sm-4">
+							<div class="subsection-heading">
+								<p class="subsection-heading-text">Project 2</p>
 
 							</div>
 							<div class="subsection-content">
@@ -194,19 +197,7 @@ Project 1
 
 							</div>
 						</div>
-	<!--Project 3-->
-						<div class="col-sm-3">
-							<div class="subsection-header">
-								Project 3
 
-							</div>
-							<div class="subsection-content">
-								Etiam nec mi et eros dignissim suscipit. Etiam convallis tellus orci, vel mattis leo tincidunt quis. Sed feugiat, purus ut tincidunt egestas, urna mi molestie nunc, eu aliquet nibh quam eu justo. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lobortis scelerisque ante quis dignissim. Praesent id dolor molestie, bibendum urna vitae, dignissim justo. Aliquam hendrerit magna placerat, pharetra elit non, tincidunt nulla. Nunc iaculis augue nunc, non accumsan diam vestibulum eu. Aenean pellentesque in nisi eget interdum. In blandit lectus nec arcu pulvinar interdum.
-
-
-							</div>
-
-						</div>
 
 					</div>
 
@@ -223,9 +214,8 @@ Project 1
 					<div class="row">
 	<!--Contact Label-->
 						<div class="col-sm-4">
-							<div class="section-header">
-Contact Me
-
+							<div class="section-heading">
+								<p class="section-heading-text">Contact</p>
 							</div>
 						</div>
 	<!--Contact Form-->
@@ -271,11 +261,18 @@ Contact Me
 										</div>
 									</div>
 
-									<!-- reCAPTCHA -->
-									<div class="g-recaptcha" data-sitekey="--YOUR RECAPTCHA SITE KEY--"></div>
+									<!-- CAPTCHA -->
 
-									<button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-send"></i> Send</button>
-									<button class="btn btn-warning" type="reset"><i class="glyphicon glyphicon-trash"></i> Reset</button>
+									<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
+
+									<button id="captcha-reload-button" class="btn btn-info" onclick="showCaptcha(); return false;" title="Load a different captcha"><i class="glyphicon glyphicon-refresh"></i></button>
+									<input type="text" name="captcha_code" title="Please enter the captcha text, here" size="10" maxlength="6" />
+
+									<div>
+										<button class="btn btn-success" type="submit" title="Send email"><i class="glyphicon glyphicon-send"></i> Send</button>
+										<button class="btn btn-warning" type="reset" title="Clear all fields in form"><i class="glyphicon glyphicon-trash"></i> Reset</button>
+									</div>
+
 								</form>
 
 								<!--empty area for form error/success output-->
@@ -307,25 +304,23 @@ Contact Me
 			<nav class="navbar navbar-default navbar-fixed-bottom">
 				<div class="container-fluid">
 
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<div class="navbar-heading">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
 							<span class="sr-only">Toggle Button</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
+							<span class="glyphicon glyphicon-plus"></span>
 						</button>
 						<!--<a href="#" class="navbar-left"><img src="img/navbar-logo.png" alt="Nav Bar Logo" class="navbar-brand navbar-left"></a>-->
 <!--						<img src="img/navbar-logo.png" alt="Nav Bar Logo" class="navbar-brand navbar-left">-->
-						<a class="navbar-brand" href="#top-of-page" >GW</a>
+						<a class="navbar-brand" href="#top-of-page" >G</a>
 <!--						<span class="navbar-brand navbar-left">GW</span>-->
 					</div>
 
 
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="collapse navbar-collapse" id="navbar-collapse-1">
 						<ul class="nav navbar-nav">
 
-							<li><a href="#about-me">About Me</a></li>
-							<li><a href="#sample-work">Sample Work</a></li>
+							<li><a href="#about-me">Info</a></li>
+							<li><a href="#sample-work">Projects</a></li>
 							<li><a href="#contact">Contact</a></li>
 
 						</ul>
