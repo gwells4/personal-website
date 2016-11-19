@@ -7,17 +7,25 @@ session_start();
  **/
 require_once(dirname(dirname(dirname(dirname(__DIR__)))) . "/personal-website/vendor/autoload.php");
 
+/**
+ * require mail-config.php
+ **/
+require_once("mail-config.php");
+
+// verify user's CAPTCHA input
 require_once(dirname(dirname(dirname(dirname(__DIR__)))) . "/personal-website/public_html/documentation/securimage/securimage.php");
 $securimage = new Securimage();
+
+try {
+	// if the CAPTCHA response was not correct, tell the user
+	if ($securimage->check($_POST['captcha_code']) == false) {
+		throw(new Exception("Your captcha response was incorrect."));
+	}
+
 
 
 
 try {
-
-	if ($securimage->check($_POST['captcha_code']) == false) {
-		// the code was incorrect
-		throw(new RuntimeException("Your captcha response was incorrect."));
-	}
 
 	// sanitize the inputs from the form: name, email, subject, and message
 	// this assumes jQuery (not Angular will be submitting the form, so we're using the $_POST superglobal
@@ -35,10 +43,9 @@ try {
 
 	/**
 	 * attach the recipients to the message
-	 * notice this an array that can include or omit the the recipient's real name
-	 * use the recipients' real name where possible; this reduces the probability of the Email being marked as spam
+	 * $MAIL_RECIPIENTS is set in mail-config.php
 	 **/
-	$recipients = ["gwells4@cnm.edu" => "Contact Form"];
+	$recipients = $MAIL_RECIPIENTS;
 	$swiftMessage->setTo($recipients);
 
 	// attach the subject line to the message
@@ -68,14 +75,14 @@ try {
 	 * the send method returns the number of recipients that accepted the Email
 	 * so, if the number attempted is not the number accepted, this is an Exception
 	 **/
-
 	if($numSent !== count($recipients)) {
 		// the $failedRecipients parameter passed in the send() method now contains contains an array of the Emails that failed
-		throw(new RuntimeException("Unable to send email"));
+		throw(new RuntimeException("unable to send email"));
 	}
 
 	// report a successful send
 	echo "<div class=\"alert alert-success\" role=\"alert\">Email successfully sent.</div>";
+
 } catch(Exception $exception) {
-	echo "<div class=\"alert alert-danger\" role=\"alert\">Unable to send email: " . $exception->getMessage() . "</div>";
+	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Unable to send email: " . $exception->getMessage() . "</div>";
 }

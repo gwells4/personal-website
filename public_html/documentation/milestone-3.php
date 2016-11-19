@@ -223,7 +223,7 @@
 							<div class="contact-form">
 
 
-								<form id="contact-form" class="form-horizontal well" method="post" action="php/sendemail.php">
+								<form id="contact-form" class="form-horizontal well" >
 									<div class="form-group">
 										<label for="name">Name</label>
 										<div class="input-group">

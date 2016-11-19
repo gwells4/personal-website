@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	/* begin validation*/
-	$("#contact-form").validate({
+	$("#contact-form").submit({
 
 		// setup handling of form errors
 		debug: true,
