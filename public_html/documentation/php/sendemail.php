@@ -12,20 +12,17 @@ require_once(dirname(dirname(dirname(dirname(__DIR__)))) . "/personal-website/ve
  **/
 require_once("mail-config.php");
 
-// verify user's CAPTCHA input
+// for CAPTCHA input
 require_once(dirname(dirname(dirname(dirname(__DIR__)))) . "/personal-website/public_html/documentation/securimage/securimage.php");
 $securimage = new Securimage();
 
+
 try {
+
 	// if the CAPTCHA response was not correct, tell the user
 	if ($securimage->check($_POST['captcha_code']) == false) {
 		throw(new Exception("Your captcha response was incorrect."));
 	}
-
-
-
-
-try {
 
 	// sanitize the inputs from the form: name, email, subject, and message
 	// this assumes jQuery (not Angular will be submitting the form, so we're using the $_POST superglobal
@@ -84,5 +81,5 @@ try {
 	echo "<div class=\"alert alert-success\" role=\"alert\">Email successfully sent.</div>";
 
 } catch(Exception $exception) {
-	echo "<div class=\"alert alert-danger\" role=\"alert\"><strong>Oh snap!</strong> Unable to send email: " . $exception->getMessage() . "</div>";
+	echo "<div class=\"alert alert-danger\" role=\"alert\">Unable to send email: " . $exception->getMessage() . "</div>";
 }

@@ -230,7 +230,9 @@ section {
 }
 
 form#contact-form.form-horizontal.well {
-	margin: 2vh;
+	margin-top: 0;
+	margin-left: 2vh;
+	margin-right: 2vh;
 	background-color: #a9c0f9;
 	background-image: none;
 	border: none;
@@ -246,13 +248,25 @@ form#contact-form.form-horizontal.well {
 	border-color: #082877;
 }
 
+.form-control:focus {
+	border-color: #082877;
+}
+
+.captcha-container {
+	margin: 2vh;
+}
+
 #captcha-reload-button {
 	border-radius: 25px;
 }
 
+.submit-and-reset-buttons {
+	margin: 2vh;
+}
 
-
-
+#alert-success, #alert-danger {
+	margin: 0;
+}
 
 
 

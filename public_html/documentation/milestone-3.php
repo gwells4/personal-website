@@ -58,6 +58,11 @@
 
 
 
+		<!-- jQuery Form, Additional Methods, Validate -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js"></script>
+
 		<script src="js/contact-form-validator.js"></script>
 
 
@@ -223,7 +228,7 @@
 							<div class="contact-form">
 
 
-								<form id="contact-form" class="form-horizontal well" >
+								<form id="contact-form" class="form-horizontal well" action="php/sendemail.php" method="post">
 									<div class="form-group">
 										<label for="name">Name</label>
 										<div class="input-group">
@@ -234,7 +239,7 @@
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="email">Email address</label>
+										<label for="email">Email</label>
 										<div class="input-group">
 											<div class="input-group-addon">
 												<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
@@ -262,25 +267,28 @@
 									</div>
 
 									<!-- CAPTCHA -->
+									<div class="captcha-container text-center">
+										<img id="captcha" src="securimage/securimage_show.php" alt="Captcha Image" title="Captcha image"/>
+										<div>
+											<button id="captcha-reload-button" class="btn btn-info" onclick="loadNewCaptcha(); return false;" title="Load a different captcha"><i class="glyphicon glyphicon-refresh"></i></button>
+											<input type="text" name="captcha_code" title="Please enter the captcha text, here" size="10" maxlength="6" />
+										</div>
+									</div>
 
-									<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
+									<!--empty area for form error/success output-->
+									<div class="row">
+										<div class="col-xs-12">
+											<div id="output-area"></div>
+										</div>
+									</div>
 
-									<button id="captcha-reload-button" class="btn btn-info" onclick="showCaptcha(); return false;" title="Load a different captcha"><i class="glyphicon glyphicon-refresh"></i></button>
-									<input type="text" name="captcha_code" title="Please enter the captcha text, here" size="10" maxlength="6" />
-
-									<div>
-										<button class="btn btn-success" type="submit" title="Send email"><i class="glyphicon glyphicon-send"></i> Send</button>
+									<div class="submit-and-reset-buttons text-center">
 										<button class="btn btn-warning" type="reset" title="Clear all fields in form"><i class="glyphicon glyphicon-trash"></i> Reset</button>
+										<button class="btn btn-success" type="submit" title="Send email"><i class="glyphicon glyphicon-send"></i> Send</button>
 									</div>
 
 								</form>
 
-								<!--empty area for form error/success output-->
-								<div class="row">
-									<div class="col-xs-12">
-										<div id="output-area"></div>
-									</div>
-								</div>
 
 							</div>
 						</div>
