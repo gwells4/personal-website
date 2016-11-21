@@ -212,7 +212,7 @@
 
 
 
-<!--Contact-->
+<!-- Contact -->
 			<section id="contact" class="content-section">
 				<div class="container">
 
