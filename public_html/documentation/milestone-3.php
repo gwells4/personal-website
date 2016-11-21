@@ -275,7 +275,7 @@
 										</div>
 									</div>
 
-									<!--empty area for form error/success output-->
+									<!--Empty area for form error (or success) notification output-->
 									<div class="row">
 										<div class="col-xs-12">
 											<div id="output-area"></div>
