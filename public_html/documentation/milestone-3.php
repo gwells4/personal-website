@@ -320,7 +320,7 @@
 						<!--<a href="#" class="navbar-left"><img src="img/navbar-logo.png" alt="Nav Bar Logo" class="navbar-brand navbar-left"></a>-->
 <!--						<img src="img/navbar-logo.png" alt="Nav Bar Logo" class="navbar-brand navbar-left">-->
 						<a class="navbar-brand" href="#top-of-page" >G</a>
-<!--						<span class="navbar-brand navbar-left">GW</span>-->
+<!--						<span class="navbar-brand navbar-left">G</span>-->
 					</div>
 
 
