@@ -35,16 +35,21 @@
 			<!-- Section 1: Content Strategy -->
 			<section>
 
-				<h2>Purpose</h2>
+				<h2>Content Strategy</h2>
 
-				<p>The purpose of this site is to serve as a contact point for my professional peers, as well as a means for potential clients and customers to learn more about my skills. To do that, I am including a brief list of projects and skills and a contact form.</p>
+					<h3>Info</h3>
+					<p>The purpose of this site is to serve as a contact point for my professional peers, as well as a means for potential clients and customers to learn more about my skills. To do that, I am including a brief list of projects and skills and a contact form. The Info section will have a brief professional summary of me, as well as a list of my web development abilities.</p>
+					<h3>Projects</h3>
+					<p>The Projects section will contain a couple of samples of my web development projects (with links, if possible).</p>
+					<h3>Contact</h3>
+					<p>The Contact section will contain a contact form for people to get in touch with me.</p>
 
 			</section>
 
 			<!-- Section 2: Desktop Wireframes -->
 			<section>
 
-				<h3>Desktop Wireframes</h3>
+				<h2>Desktop Wireframes</h2>
 
 				<img id="desktop-wireframe-1" src="../img/personal-website-desktop-wireframe-1.jpg" alt="Desktop Wireframe 1">
 				<img id="desktop-wireframe-2" src="../img/personal-website-desktop-wireframe-2.jpg" alt="Desktop Wireframe 2">
@@ -54,7 +59,7 @@
 			<!-- Section 3: Mobile Wireframes -->
 			<section>
 
-				<h3>Mobile Wireframes</h3>
+				<h2>Mobile Wireframes</h2>
 
 				<img id="mobile-wireframe-1" src="../img/personal-website-mobile-wireframe-1.jpg" alt="Mobile Wireframe 1">
 				<img id="mobile-wireframe-2" src="../img/personal-website-mobile-wireframe-2.jpg" alt="Mobile Wireframe 2">
